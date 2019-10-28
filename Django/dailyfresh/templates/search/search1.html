@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+搜索的关键字：{{ query }}
+<br>当前页的page对象：{{ page }}
+<br>遍历page对象，获得的是SearchResult的实例对象
+<ul>
+    {% for x in page %}
+        <li>{{ x }}</li>
+    {% endfor %}
+
+</ul>
+<br>
+SearchResult().object返回的是模型类对象
+<ul>
+    {% for foo in page %}
+        <li>{{ foo.object }}</li>
+    {% endfor %}
+
+</ul>
+
+<br>分页Paginator对象：{{ paginator }}
+</body>
+</html>
