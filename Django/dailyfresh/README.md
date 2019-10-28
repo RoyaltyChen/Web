@@ -6,3 +6,6 @@
 - Celery
 - Fast DFS
 - Nginx
+
+## 效果图
+![天天生鲜](./static/images/dailyfresh.png)
